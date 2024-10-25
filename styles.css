@@ -1,0 +1,109 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.resume-container {
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    background-image: url('https://media.licdn.com/dms/image/D4D12AQG2eQ-wJZcr-Q/article-cover_image-shrink_720_1280/0/1683649254543?e=2147483647&v=beta&t=45ydC2ONoFm36l66WJlx5TEz0WkKcGpBDVXaDK-XCgg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border: 2px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px 5px rgba(135, 206, 250, 0.8);
+    border: 3px solid white;
+}
+
+.name-box h1 {
+    font-size: 28px;
+    color: darkslategray;
+    margin: 0;
+}
+
+.name-box p {
+    font-size: 18px;
+    color: gray;
+    margin: 5px 0 0;
+}
+
+/* Sections */
+section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h2 {
+    font-size: 20px;
+    color: darkblue;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 5px;
+}
+
+p, li {
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Animations */
+.resume-container:hover {
+    transform: scale(1.02);
+}
+
+section:hover {
+    background-color: lightblue;
+}
